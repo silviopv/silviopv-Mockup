@@ -1,0 +1,5 @@
+{
+  "name": "MockupAI Studio",
+  "description": "A professional AI-powered mockup generator. Upload your design, choose a context, and generate high-quality photorealistic mockups instantly using Gemini AI.",
+  "requestFramePermissions": []
+}

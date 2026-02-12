@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - API_KEY=${API_KEY}
+    ports:
+      - "80:80"
+    restart: always
+    environment:
+      - API_KEY=${API_KEY}
+
+# Instructions:
+# 1. Create a .env file in the same directory containing: API_KEY=your_google_api_key_here
+# 2. Run: docker-compose up -d --build
